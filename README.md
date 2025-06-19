@@ -30,11 +30,11 @@ Supports basic command execution, background jobs (`&`), and signal handling (`C
 ```bash
 make
 ```
-###Run
+### Run
 ```bash
 ./mysh
 ```
-Project Structure
+### Project Structure
 
 ```
 mysh/
@@ -43,7 +43,7 @@ mysh/
 ├── Makefile             # Build script
 ├── README.md            # Project info
 ```
-📜 License
+## 📜 License
 
 MIT License — feel free to use or contribute!
 
