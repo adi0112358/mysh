@@ -60,7 +60,7 @@ int main(){
       }
 	  pid_t pid = fork();
 	  if(pid == 0){
-	      if(pid == 0){
+	      
 	    tcsetpgrp(STDIN_FILENO, getpid());
 	    signal(SIGINT, SIG_DFL);
 	    signal(SIGTSTP, SIG_DFL);
@@ -68,7 +68,7 @@ int main(){
             execvp(argv[0], argv.data());
             perror("execvp failed");
             exit(EXIT_FAILURE);
-    }
+    
 
 	      signal(SIGINT, SIG_DFL);
 	      signal(SIGTSTP, SIG_DFL);
